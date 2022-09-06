@@ -65,6 +65,8 @@ section {
     background-color: #e3e3e3;
     padding: 1em;
     margin-bottom: 2em;
+    /* collegamento absolute/relative  */
+    position: relative;
 }
 section h2 {
     text-align: center;
@@ -73,6 +75,10 @@ section h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
+    /* h2 novita */
+    position: absolute;
+    background-color: grey;
+    top: -16px;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
