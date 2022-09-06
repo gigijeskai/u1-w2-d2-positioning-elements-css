@@ -203,3 +203,9 @@ footer {
 footer a {
     color: fuchsia;
 }
+/* bottone on the top */
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
