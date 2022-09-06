@@ -32,6 +32,15 @@ header nav ul {
 header nav li {
     list-style: none;
 }
+header li {
+    display: block;
+}
+header a:first-of-type {
+    float: right;
+}
+header a:last-of-type {
+    float: left;
+}
 header nav li a {
     color: white;
     text-decoration: none;
@@ -74,6 +83,14 @@ h1 {
 p, address, ul, ol, dl, blockquote {
     margin-bottom: 1.2em;
 }
+#badge {
+    border: solid 3px blueviolet;
+    width: fit-content;
+}
+#badge {
+    float: left;
+}
+
 h1 + p {
     color: #a0a0a0;
 }
