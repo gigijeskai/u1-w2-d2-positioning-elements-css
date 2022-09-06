@@ -24,6 +24,7 @@ header {
     padding: 2em 1.5em;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 header div img {
     margin-bottom: 20px;
@@ -34,16 +35,9 @@ header nav ul {
 header nav li {
     list-style: none;
 }
-/* nav orizzontale */
 header li {
-    display: block;
+    display: inline-block;
 }
-header a:first-of-type {
-    float: right;
-}
-header a:last-of-type {
-    float: left;
-    }
 header nav li a {
     color: white;
     text-decoration: none;
@@ -95,19 +89,17 @@ p, address, ul, ol, dl, blockquote {
 /* badge */
 #badge {
     border: solid 5px blueviolet;
-    width: 75px;
+    width: 80px;
     margin-inline: 0em;
-    height: 82px;
-}
-#border-blue {
-    border: solid 5px blue;
-    height: 92px;
-    width: 85px;
-    float: left;
-    margin-right: 1em;
+    height: 85px;
+    margin-right: 10px;
+    outline: 6px solid blue
 }
 #badge {
     float: left;
+}
+#badge img {
+    padding: 2px;
 }
 
 h1 + p {
@@ -217,22 +209,41 @@ footer a {
 /* bottoni */
 
 .blue-calendar {
-    position: absolute;
-    right: 7px;
+    position: fixed;
+    right: 16px;
     color: blue;
     background-color: white;
-    width: 15px;
+    width: fit-content;
     top: 50px;
+ margin-block: 1em;
+}
+.blue-calendar i {
+  color: blue;
+  font-size: 2em;  
 }
 .blue-social {
-    position: absolute;
-    right: 7px;
+    position: fixed;
+    right: 15px;
     top: 79px;
     color: blue;
     background-color: white;
-    width: 15px;
+    width: fit-content;
+    margin-block: 2em;
 }
-.top {
-    background-color:fuchsia;
-    bottom: 50px;
+.blue-social i {
+    color: blue;
+    font-size: 2em;
+}
+.to-top {
+    background-color: white;
+    width: fit-content;
+    position: fixed;
+    top: 14px;
+    z-index: 1;
+    right: 16px;
+    border: solid 1px fuchsia;
+}
+.to-top i {
+    color: fuchsia;
+    font-size: 2em;
 }
